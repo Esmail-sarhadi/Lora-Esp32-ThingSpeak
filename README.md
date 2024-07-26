@@ -1,2 +1,78 @@
-# Lora-Esp32-ThingSpeak
-This project demonstrates a LoRa communication setup using multiple nodes transmitting temperature and humidity data to a central server. The server receives the data, processes it, and optionally sends it to the internet via ThingSpeak.
+# LoRa Communication Project
+
+This project involves a LoRa communication setup where multiple sensor nodes transmit temperature and humidity data to a central server. The server processes this data and optionally sends it to the internet.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Components](#components)
+- [Wiring](#wiring)
+- [Setup](#setup)
+- [Scenario Images](#scenario-images)
+- [License](#license)
+
+## Introduction
+
+The project includes:
+- **Sensor Nodes**: Collect temperature and humidity data.
+- **Central Server**: Receives data from nodes, processes it, and optionally uploads it to the internet.
+
+### Node Types
+1. **Node 1**: Transmits data with Node ID "11".
+2. **Node 2**: Transmits data with Node ID "12".
+
+### Server
+- Receives data from nodes and sends it to ThingSpeak via the internet.
+
+## Components
+
+- **LoRa Module** (e.g., RFM95)
+- **DHT11 Temperature and Humidity Sensor**
+- **Arduino** (or compatible microcontroller)
+- **Jumper wires**
+- **Breadboard**
+
+## Wiring
+
+### Node Wiring
+- **DHT11 Sensor**:
+  - VCC to 5V
+  - GND to GND
+  - Data to Pin 4
+- **LoRa Module**:
+  - VCC to 3.3V
+  - GND to GND
+  - CS to Pin 26
+  - RST to Pin 12
+  - INT to Pin 25
+
+### Server Wiring
+- **LoRa Module** (same as nodes):
+  - VCC to 3.3V
+  - GND to GND
+  - CS to Pin 26
+  - RST to Pin 12
+  - INT to Pin 25
+
+## Setup
+
+1. **Install Libraries**:
+   - RH_RF95
+   - SPI
+   - DHT
+
+2. **Upload the Code**:
+   - For **Node 1**: Ensure `numNode1` and `numNode2` are set to '1'.
+   - For **Node 2**: Ensure `numNode1` is '1' and `numNode2` is '2'.
+   - For the **Server**: Configure with your ThingSpeak API key and make sure it’s set to receive and process data.
+
+3. **Power the Devices**:
+   - Ensure all components are connected properly and power them up.
+
+## Scenario Images
+
+![Scenario 3](Scenario%20(3).jpg)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
