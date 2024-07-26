@@ -59,7 +59,7 @@ The project includes:
    - RH_RF95
    - SPI
    - DHT
-
+ 
 2. **Upload the Code**:
    - For **Node 1**: Ensure `numNode1` and `numNode2` are set to '1'.
    - For **Node 2**: Ensure `numNode1` is '1' and `numNode2` is '2'.
