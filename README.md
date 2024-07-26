@@ -10,7 +10,7 @@ This project involves a LoRa communication setup where multiple sensor nodes tra
 - [📖 Introduction](#introduction) 
 - [🔧 Components](#components)
 - [🔌 Wiring](#wiring)
-- [⚙️ Setup](#setup) 
+- [⚙️ Setup](#setup)  
 - [🖼️ Scenario Images](#scenario-images)
 - [📄 License](#license)
 
