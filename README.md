@@ -7,7 +7,7 @@ Here is the updated README file with formatting improvements and emojis added:
 This project involves a LoRa communication setup where multiple sensor nodes transmit temperature and humidity data to a central server. The server processes this data and optionally sends it to the internet.
 
 ## 📑 Table of Contents
-- [📖 Introduction](#introduction)
+- [📖 Introduction](#introduction) 
 - [🔧 Components](#components)
 - [🔌 Wiring](#wiring)
 - [⚙️ Setup](#setup) 
